@@ -20,7 +20,7 @@ const Page = () => {
 				width="flex"
 				height="480"
 				type="text/html"
-			></object>
+			/>
 			<p />
 			<button type="button">
 				<a href="tel:+4911880">Notruf</a>
