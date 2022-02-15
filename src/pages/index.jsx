@@ -11,7 +11,7 @@ const Page = () => {
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
 			<h1>First Aid Hero</h1>
-			<button>
+			<button type="button">
 				<Link href="/overview">Rette Leben!</Link>
 			</button>
 			<a href="tel:+4911880">Notruf</a>
