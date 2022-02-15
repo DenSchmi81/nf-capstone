@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<header>
 			<nav data-test-id="navigation">
-				<Link href="/">Home</Link>
+				<Link href="/overview">Home</Link>
 				<Link href="/about">About me</Link>
 			</nav>
 		</header>
