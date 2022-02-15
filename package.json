@@ -29,6 +29,7 @@
     "next": "12.0.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-native-webview": "^11.17.2",
     "zustand": "3.6.9"
   },
   "devDependencies": {
