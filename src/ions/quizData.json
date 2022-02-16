@@ -1,0 +1,100 @@
+[
+  {
+    "number" : 1,
+    "text" : "Welche Hilfsmittel braucht man um einen Verkehrsunfall zu sichern?",
+    "answer1" : "Warndreieck",
+    "answer2" : "Warnweste",
+    "answer3" : "Ersatzreifen"
+  },
+  {
+    "number" : 2,
+    "text" : "An welchen Symptomen erkennst du einen Sonnenstich?",
+    "answer1" : "Roter, heißer Kopf und Nacken",
+    "answer2" : "Schwindelgefühl",
+    "answer3" : "Nackensteifigkeit",
+    "answer4" : "Atemnot"
+  },
+  {
+    "number" : 3,
+    "text" : "Wann wird ein Druckverband angelegt?",
+    "answer1" : "Bei Schürfwunden",
+    "answer2" : "Bei Verbrennungen",
+    "answer3" : "Bei stark blutenden Wunden",
+    "answer4" : "Bei Frakturen"
+  },
+  {
+    "number" : 4,
+    "text" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
+    "answer1" : "30 Sekunden",
+    "answer2" : "20 Sekunden",
+    "answer3" : "10 Sekunden",
+    "answer4" : "60 Sekunden"
+  },
+  {
+    "number" : 5,
+    "text" : "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+    "answer1" : "Wahr",
+    "answer2" : "Falsch"
+  },
+  {
+    "number" : 6,
+    "text" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+    "answer1" : "Nein, das ist zu gefährlich.",
+    "answer2" : "Darf nur von Profis gemacht werden.",
+    "answer3" : "Ja, da sonst Lebensgefahr."
+  },
+  {
+  "number" : 7,
+  "text" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+  "answer1" : "Nein, das ist zu gefährlich.",
+  "answer2" : "Darf nur von Profis gemacht werden.",
+  "answer3" : "Ja, da sonst Lebensgefahr."
+},
+  {
+    "number" : 8,
+    "text" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
+    "answer1" : "Oberkörper erhöht",
+    "answer2" : "Bauchlage",
+    "answer3" : "Schocklage"
+  },
+  {
+    "number" : 9,
+    "text" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+    "answer1" : "Wahr",
+    "answer2" : "Falsch"
+  },
+  {
+    "number" : 10,
+    "text" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
+    "answer1" : "Person ist bewusstlos und atmet.",
+    "answer2" : "Person ist bewusstlos und atmet nicht",
+    "answer3" : "Person ist bei Bewusstsein."
+  },
+  {
+    "number" : 11,
+    "text" : "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
+    "answer1" : "Gar nicht, so regeneriert Haut besser.",
+    "answer2" : "Kurz kühlen, steril abdecken.",
+    "answer3" : "Ein Druckverband wird angelegt."
+  },
+  {
+    "number" : 12,
+    "text" : "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
+    "answer1" : "Kutschersitz",
+    "answer2" : "Schocklage",
+    "answer3" : "Bauchlage"
+  },
+  {
+    "number" : 13,
+    "text" : "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
+    "answer1" : "30x drücken, 2x beatmen",
+    "answer2" : "15x drücken, 2x beatmen",
+    "answer3" : "30x drücken, 4x beatmen"
+  },
+  {
+    "number" : 15,
+    "text" : "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
+    "answer1" : "Wahr",
+    "answer2" : "Falsch"
+  }
+]
