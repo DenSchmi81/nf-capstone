@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "../organisms/layout";
+import "bulma/css/bulma.min.css';
 
 const Page = () => {
 	return (
