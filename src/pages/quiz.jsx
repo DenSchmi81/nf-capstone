@@ -10,6 +10,7 @@ const Page = () => {
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
 			<h1>Teste Dein Wissen!</h1>
+
 			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
