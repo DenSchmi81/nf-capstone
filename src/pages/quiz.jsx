@@ -6,10 +6,11 @@ const Page = () => {
 	return (
 		<Layout>
 			<Head>
-				<title key="title">First Aid Hero</title>
+				<title key="title">Erste-Hilfe-Quiz</title>
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
-			<h1>First Aid Hero</h1>
+			<h1>Teste Dein Wissen!</h1>
+
 			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
