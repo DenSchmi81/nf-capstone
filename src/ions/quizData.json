@@ -1,103 +1,72 @@
-[
+{
+  "data": [
   {
-    "id" : 1,
-    "text" : "Welche Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
-    "answers": [
-    "Warndreieck",
-    "Wagenheber",
-    "Ersatzreifen"
-      ],
-    "correctAnswerIndex": 1
+    "question" : "Welches Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
+    "choices": ["Warndreieck", "Wagenheber", "Ersatzreifen", "Nothammer"],
+    "answer": "Warndreieck"
   },
   {
-    "id" : 2,
-    "text" : "An welchen Symptomen erkennst du einen Sonnenstich?",
-    "answer1" : "Roter, heißer Kopf und Nacken",
-    "answer2" : "Herzrasen",
-    "answer3" : "",
-    "answer4" : "Atemnot"
+    "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
+    "choices" : ["Roter, heißer Kopf und Nacken", "Herzrasen", "Zyanose", "Atemnot"],
+    "answer" : "Roter, heißer Kopf und Nacken"
   },
   {
-    "id" : 3,
-    "text" : "Wann wird ein Druckverband angelegt?",
-    "answer1" : "Bei Schürfwunden",
-    "answer2" : "Bei Verbrennungen",
-    "answer3" : "Bei stark blutenden Wunden",
-    "answer4" : "Bei Frakturen"
+    "question" : "Wann wird ein Druckverband angelegt?",
+    "choices" : ["Bei Schürfwunden", "Bei Verbrennungen", "Bei stark blutenden Wunden", "Bei Frakturen"],
+    "answer" : "Bei stark blutenden Wunden"
   },
   {
-    "id" : 4,
-    "text" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
-    "answer1" : "30 Sekunden",
-    "answer2" : "20 Sekunden",
-    "answer3" : "10 Sekunden",
-    "answer4" : "60 Sekunden"
+
+    "question" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
+    "choices" : ["30 Sekunden", "20 Sekunden", "10 Sekunden", "60 Sekunden"],
+    "answer" : "10 Sekunden"
   },
   {
-    "id" : 5,
-    "text" : "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "answer1" : "Wahr",
-    "answer2" : "Falsch"
+
+    "question": "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+    "choices" : ["Wahr", "Falsch"],
+    "answer" : "Wahr"
   },
   {
-    "id" : 6,
-    "text" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
-    "answer1" : "Nein, das ist zu gefährlich.",
-    "answer2" : "Darf nur von Profis gemacht werden.",
-    "answer3" : "Ja, da sonst Lebensgefahr."
+    "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+    "choices" : ["Nein, das ist zu gefährlich.", "Darf nur von Profis gemacht werden.", "Ja, da sonst Lebensgefahr."],
+    "answer" : "Ja, da sonst Lebensgefahr."
   },
   {
-  "id" : 7,
-  "text" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
-  "answer1" : "Nein, das ist zu gefährlich.",
-  "answer2" : "Darf nur von Profis gemacht werden.",
-  "answer3" : "Ja, da sonst Lebensgefahr."
-},
-  {
-    "id" : 8,
-    "text" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
-    "answer1" : "Oberkörper erhöht",
-    "answer2" : "Bauchlage",
-    "answer3" : "Schocklage"
+
+    "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
+    "choices" : ["Oberkörper erhöht", "Bauchlage", "Schocklage"],
+    "answer" : "Oberkörper erhöht"
   },
   {
-    "id" : 9,
-    "text" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "answer1" : "Wahr",
-    "answer2" : "Falsch"
+    "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+    "choices" : ["Wahr", "Falsch"],
+    "answer" : "Falsch"
   },
   {
-    "id" : 10,
-    "text" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
-    "answer1" : "Person ist bewusstlos und atmet.",
-    "answer2" : "Person ist bewusstlos und atmet nicht",
-    "answer3" : "Person ist bei Bewusstsein."
+    "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
+    "choices" : ["Person ist bewusstlos und atmet.", "Person ist bewusstlos und atmet nicht", "Person ist bei Bewusstsein."],
+    "answer" : "Person ist bewusstlos und atmet."
   },
   {
-    "id" : 11,
-    "text" : "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
-    "answer1" : "Gar nicht, so regeneriert Haut besser.",
-    "answer2" : "Kurz kühlen, steril abdecken.",
-    "answer3" : "Ein Druckverband wird angelegt."
+    "question" : "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
+    "choices" : ["Gar nicht, so regeneriert Haut besser.", "Kurz kühlen, steril abdecken.", "Ein Druckverband wird angelegt."],
+    "answer" : "Kurz kühlen, steril abdecken."
   },
   {
-    "id" : 12,
-    "text" : "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
-    "answer1" : "Kutschersitz",
-    "answer2" : "Schocklage",
-    "answer3" : "Bauchlage"
+    "question" : "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
+    "choices" : ["Kutschersitz", "Schocklage", "Bauchlage"],
+    "answer" : "Kutschersitz"
   },
   {
-    "id" : 13,
-    "text" : "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
-    "answer1" : "30x drücken, 2x beatmen",
-    "answer2" : "15x drücken, 2x beatmen",
-    "answer3" : "30x drücken, 4x beatmen"
+    "question" : "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
+    "choices" : ["30x drücken, 2x beatmen", "15x drücken, 2x beatmen", "30x drücken, 4x beatmen"],
+    "answer" : "30x drücken, 2x beatmen"
   },
   {
-    "id" : 15,
-    "text" : "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
-    "answer1" : "Wahr",
-    "answer2" : "Falsch"
-  }
+    "question" : "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
+    "choices" : ["Wahr", "Falsch"],
+    "answer" : "Wahr"
+      }
 ]
+}
