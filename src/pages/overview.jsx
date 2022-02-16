@@ -29,7 +29,9 @@ const Page = () => {
 			<button type="button">
 				<Link href="/courseBooking">Kursbuchung</Link>
 			</button>
-			<a href="tel:+4911880">Notruf</a>
+			<button type="button">
+				<a href="tel:+4911880">Notruf</a>
+			</button>
 		</Layout>
 	);
 };
