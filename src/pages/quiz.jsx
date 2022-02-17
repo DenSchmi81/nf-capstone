@@ -1,6 +1,8 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "../organisms/layout";
+import StartQuiz from "../atoms/button/StartQuiz.js";
+/*import "bulma/css/bulma.min.css";*/
 
 const Page = () => {
 	return (
@@ -9,8 +11,7 @@ const Page = () => {
 				<title key="title">Erste-Hilfe-Quiz</title>
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
-			<h1>Teste Dein Wissen!</h1>
-
+			<StartQuiz />
 			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
