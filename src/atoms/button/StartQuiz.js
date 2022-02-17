@@ -1,6 +1,7 @@
 import React from "react";
 /*import "bulma/css/bulma.min.css";*/
 
+
 const StartQuiz = ({ onQuizStart }) => {
 	return (
 		<div className="card">

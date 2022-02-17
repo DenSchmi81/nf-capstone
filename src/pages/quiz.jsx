@@ -5,6 +5,8 @@ import Layout from "../organisms/layout";
 import StartQuiz from "../atoms/button/StartQuiz.js";
 */
 import Question from "../molecules/Question.js";
+import StartQuiz from "../atoms/button/StartQuiz.js";
+
 /*import "bulma/css/bulma.min.css";*/
 
 const Page = () => {
@@ -16,6 +18,7 @@ const Page = () => {
 			</Head>
 			{/* <StartQuiz /> */}
 			<Question />
+			<StartQuiz />
 			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
