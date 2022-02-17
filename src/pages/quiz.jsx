@@ -1,7 +1,9 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "../organisms/layout";
+/*
 import StartQuiz from "../atoms/button/StartQuiz.js";
+*/
 import Question from "../molecules/Question.js";
 /*import "bulma/css/bulma.min.css";*/
 
