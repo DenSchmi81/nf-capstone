@@ -9,7 +9,7 @@ const App = () => {
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 
 	return (
-		<>
+		<div>
 			{question.data[currentQuestion] ? (
 				<>
 					{/** QUIZ-CARD-HEADER */}
@@ -62,7 +62,7 @@ const App = () => {
 					{question.data.length} correct answers!
 				</p>
 			)}
-		</>
+		</div>
 	);
 };
 
