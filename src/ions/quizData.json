@@ -2,71 +2,697 @@
   "data": [
   {
     "question" : "Welches Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
-    "choices": ["Warndreieck", "Wagenheber", "Ersatzreifen", "Nothammer"],
+    "choices": [
+      {
+      "choice": "Warndreieck",
+      "id": 1
+      },
+      {"choice":"Wagenheber",
+        "id": 2
+      },
+      {"choice": "Ersatzreifen",
+        "id": 3
+      },
+      {"choice": "Nothammer",
+      "id": 4}
+    ],
     "answer": "Warndreieck"
   },
-  {
-    "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
-    "choices" : ["Roter, heißer Kopf und Nacken", "Herzrasen", "Zyanose", "Atemnot"],
-    "answer" : "Roter, heißer Kopf und Nacken"
-  },
-  {
-    "question" : "Wann wird ein Druckverband angelegt?",
-    "choices" : ["Bei Schürfwunden", "Bei Verbrennungen", "Bei stark blutenden Wunden", "Bei Frakturen"],
-    "answer" : "Bei stark blutenden Wunden"
-  },
-  {
-
-    "question" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
-    "choices" : ["30 Sekunden", "20 Sekunden", "10 Sekunden", "60 Sekunden"],
-    "answer" : "10 Sekunden"
-  },
-  {
-
-    "question": "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Wahr"
-  },
-  {
-    "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
-    "choices" : ["Nein, das ist zu gefährlich.", "Darf nur von Profis gemacht werden.", "Ja, da sonst Lebensgefahr."],
-    "answer" : "Ja, da sonst Lebensgefahr."
-  },
-  {
-
-    "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
-    "choices" : ["Oberkörper erhöht", "Bauchlage", "Schocklage"],
-    "answer" : "Oberkörper erhöht"
-  },
-  {
-    "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Falsch"
-  },
-  {
-    "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
-    "choices" : ["Person ist bewusstlos und atmet.", "Person ist bewusstlos und atmet nicht", "Person ist bei Bewusstsein."],
-    "answer" : "Person ist bewusstlos und atmet."
-  },
-  {
-    "question" : "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
-    "choices" : ["Gar nicht, so regeneriert Haut besser.", "Kurz kühlen, steril abdecken.", "Ein Druckverband wird angelegt."],
-    "answer" : "Kurz kühlen, steril abdecken."
-  },
-  {
-    "question" : "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
-    "choices" : ["Kutschersitz", "Schocklage", "Bauchlage"],
-    "answer" : "Kutschersitz"
-  },
-  {
-    "question" : "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
-    "choices" : ["30x drücken, 2x beatmen", "15x drücken, 2x beatmen", "30x drücken, 4x beatmen"],
-    "answer" : "30x drücken, 2x beatmen"
-  },
-  {
-    "question" : "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Wahr"
-      }
+    {
+      "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
+      "choices": [
+        {
+          "choice": "Roter, heißer Kopf und Nacken",
+          "id": 1
+        },
+        {"choice":"Herzrasen",
+          "id": 2
+        },
+        {"choice": "Zyanose",
+          "id": 3
+        },
+        {"choice": "Atemnot",
+          "id": 4}
+      ],
+      "answer": "Roter, heißer Kopf und Nacken"
+    },
+    {
+      "question" : "Wann wird ein Druckverband angelegt?",
+      "choices": [
+        {
+          "choice": "Bei Schürfwunden",
+          "id": 1
+        },
+        {"choice":"Bei Verbrennungen",
+          "id": 2
+        },
+        {"choice": "Bei stark blutenden Wunden",
+          "id": 3
+        },
+        {"choice": "Bei Frakturen",
+          "id": 4}
+      ],
+      "answer": "Bei stark blutenden Wunden"
+    },
+    {
+      "question" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
+      "choices": [
+        {
+          "choice": "30 Sekunden",
+          "id": 1
+        },
+        {"choice":"20 Sekunden",
+          "id": 2
+        },
+        {"choice": "60 Sekunden",
+          "id": 3}
+      ],
+      "answer": "10 Sekunden"
+    },
+    {
+      "question" : "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+        ],
+      "answer": "Wahr"
+    },
+    {
+      "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+      "choices": [
+        {
+          "choice": "Nein, das ist zu gefährlich.",
+          "id": 1
+        },
+        {"choice":"Darf nur von Profis gemacht werden.",
+          "id": 2
+        },
+        {"choice": "Ja, da sonst Lebensgefahr.",
+          "id": 3}
+      ],
+      "answer": "Ja, da sonst Lebensgefahr."
+    },
+    {
+      "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
+      "choices": [
+        {
+          "choice": "Oberkörper erhöht",
+          "id": 1
+        },
+        {"choice":"Bauchlage",
+          "id": 2
+        },
+        {"choice": "Schocklage",
+          "id": 3}
+      ],
+      "answer": "Oberkörper erhöht"
+    },
+    {
+      "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Falsch"
+    },
+    {
+      "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
+      "choices": [
+        {
+          "choice": "Person ist bewusstlos und atmet.",
+          "id": 1
+        },
+        {"choice":"Person ist bewusstlos und atmet nicht",
+          "id": 2
+        },
+        {"choice": "Person ist bei Bewusstsein.",
+          "id": 3}
+      ],
+      "answer": "Falsch"
+    },
+    {
+      "question": "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
+      "choices": [
+        {
+          "choice": "Gar nicht, so regeneriert Haut besser.",
+          "id": 1
+        },
+        {
+          "choice": "Kurz kühlen, steril abdecken.",
+          "id": 2
+        },
+        {
+          "choice": "Ein Druckverband wird angelegt.",
+          "id": 3
+        }
+      ],
+      "answer": "Kurz kühlen, steril abdecken."
+    },
+    {
+      "question": "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
+      "choices": [
+        {
+          "choice": "Kutschersitz",
+          "id": 1
+        },
+        {
+          "choice": "Schocklage",
+          "id": 2
+        },
+        {
+          "choice": "Bauchlage",
+          "id": 3
+        }
+      ],
+      "answer": "Kutschersitz"
+    },
+    {
+      "question": "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
+      "choices": [
+        {
+          "choice": "30x drücken, 2x beatmen",
+          "id": 1
+        },
+        {
+          "choice": "15x drücken, 2x beatmen",
+          "id": 2
+        },
+        {
+          "choice": "30x drücken, 4x beatmen",
+          "id": 3
+        }
+      ],
+      "answer": "30x drücken, 2x beatmen"
+    },
+    {
+      "question": "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {
+          "choice": "Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Wahr"
+    },
+    {
+      "question": "Wobei hilft die Merkhilfe F-A-S-T?",
+      "choices": [
+        {
+          "choice": "Beim Ausführen der stabilen Seitenlage",
+          "id": 1
+        },
+        {
+          "choice": "Beim Erfassen von Schlaganfall-Symptomen",
+          "id": 2
+        },
+        {
+          "choice": "Beim Erkennen eines Knochenbruchs",
+          "id": 3
+        }
+      ],
+      "answer": "Beim Erfassen von Schlaganfall-Symptomen"
+    },
+    {
+      "question": "Welche der folgenden Aussagen stimmt nicht?",
+      "choices": [
+        {
+          "choice": "Für den Autoführerschein in Deutschland ist ein  Erste-Hilfe-Grundkurs nötig",
+          "id": 1
+        },
+        {
+          "choice": "Einen Externen Defibrillator (AED) darf jeder zur Hilfe anwenden",
+          "id": 2
+        },
+        {
+          "choice": "Verbandkästen enthalten generell immer ein Desinfektionsmittel",
+          "id": 3
+        }
+      ],
+      "answer": "Verbandkästen enthalten generell immer ein Desinfektionsmittel"
+    },
+    {
+      "question": "Ein Kind hat in einem unbeobachteten Moment ein Reinigungsmittel getrunken. Ihm ist übel und es hustet. Was tun Sie?",
+      "choices": [
+        {
+          "choice": "Ich bringe das Kind zum Erbrechen und rufe den Giftnotruf an",
+          "id": 1
+        },
+        {
+          "choice": "Ich lasse den Mund ausspülen und warte, ob sich der Zustand verschlechtert",
+          "id": 2
+        },
+        {
+          "choice": "Ich lagere das Kind mit erhöhtem Oberkörper und wähle umgehend den Notruf",
+          "id": 3
+        }
+      ],
+      "answer": "Ich lagere das Kind mit erhöhtem Oberkörper und wähle umgehend den Notruf"
+    },
+    {
+      "question": "Auf welcher Unterlage sollte eine Herzdruckmassage durchgeführt werden?",
+      "choices": [
+        {
+          "choice": "Auf einer möglichst weichen Unterlage",
+          "id": 1
+        },
+        {
+          "choice": "Auf einer möglichst harten Unterlage",
+          "id": 2
+        },
+        {
+          "choice": "Das ist egal",
+          "id": 3
+        }
+      ],
+      "answer": "Auf einer möglichst harten Unterlage"
+    },
+    {
+      "question": "Unter anderem sind folgende Informationen für die Rettungsleitstelle wichtig . . .",
+      "choices": [
+        {
+          "choice": "Wo der Notfallort ist und wie viele Menschen verletzt sind",
+          "id": 1
+        },
+        {
+          "choice": "Welcher Sachschaden entstanden ist",
+          "id": 2
+        },
+        {
+          "choice": "Wie viel Blut die Person verloren hat",
+          "id": 3
+        }
+      ],
+      "answer": "Wo der Notfallort ist und wie viele Menschen verletzt sind"
+    },
+    {
+      "question": "Sie beobachten bei einem Unwetter, wie eine Person vom Blitz getroffen wird und nun am Boden liegt. Wie verhalten Sie sich richtig?",
+      "choices": [
+        {
+          "choice": "Die Person keinesfalls berühren, da sie unter Strom stehen kann",
+          "id": 1
+        },
+        {
+          "choice": "Ich mache den Notfall-Check und kontrolliere Bewusstsein und Atmung",
+          "id": 2
+        },
+        {
+          "choice": "Ich kühle die Person mit Wasser",
+          "id": 3
+        }
+      ],
+      "answer": "Ich mache den Notfall-Check und kontrolliere Bewusstsein und Atmung"
+    },
+    {
+      "question": "Welche Aussage zur Herz-Lungen-Wiederbelebung ist richtig?",
+      "choices": [
+        {
+          "choice": "Brustkorb ca. 1/3 oder 6 -8 cm rhythmisch eindrücken",
+          "id": 1
+        },
+        {
+          "choice": "Nur ausgebildete Notfallsanitäter dürfen diese durchführen",
+          "id": 2
+        },
+        {
+          "choice": "BHs bei Frauen generell nicht entfernen, um Gaffer nicht weiter zu animieren",
+          "id": 3
+        }
+      ],
+      "answer": "Brustkorb ca. 1/3 oder 6 -8 cm rhythmisch eindrücken"
+    },
+    {
+      "question": "Über welche Notfallnummer ist der Rettungsdienst europaweit zu erreichen?",
+      "choices": [
+        {
+          "choice": "122",
+          "id": 1
+        },
+        {
+          "choice": "118",
+          "id": 2
+        },
+        {
+          "choice": "112",
+          "id": 3
+        }
+      ],
+      "answer": "112"
+    },
+    {
+      "question": "Was sind die wichtigsten Erste-Hilfe-Maßnahmen?",
+      "choices": [
+        {
+          "choice": "Ich eile in das nächste öffentliche Gebäude und organisiere einen Defibrillator",
+          "id": 1
+        },
+        {
+          "choice": "Ich rufe die Rettung und mache sonst nichts weiter",
+          "id": 2
+        },
+        {
+          "choice": "Eigenschutz, lebensrettende Sofortmaßnahmen, Notruf absetzen",
+          "id": 3
+        }
+      ],
+      "answer": "Eigenschutz, lebensrettende Sofortmaßnahmen, Notruf absetzen"
+    },
+    {
+      "question": "Kann es einem bewusstlosen Menschen schaden, wenn er defibrilliert wird?",
+      "choices": [
+        {
+          "choice": "Nein, der Defibrillator erkennt vollautomatisch, ob ein Schock notwendig ist",
+          "id": 1
+        },
+        {
+          "choice": "Ja, wenn es nicht erforderlich ist, bleibt das Herz des Verletzten stehen",
+          "id": 2
+        },
+        {
+          "choice": "Ja, der Verletzte kann innere Verbrennungen durch den Stromstoß erleiden",
+          "id": 3
+        }
+      ],
+      "answer": "Nein, der Defibrillator erkennt vollautomatisch, ob ein Schock notwendig ist"
+    },
+    {
+      "question": "An einem Wintertag finden Sie einen Obdachlosen auf einer Parkbank liegend vor. Scheinbar schläft die Person. Dann sehen Sie bläulich-rote Blutblasen im Gesicht. Wie verhalten Sie sich?",
+      "choices": [
+        {
+          "choice": "Die Person atmet und schläft sicher nur ihren Rausch aus. Ich gehe weiter",
+          "id": 1
+        },
+        {
+          "choice": "Ich alarmiere die Rettung, wenn die Person nicht reagiert",
+          "id": 2
+        },
+        {
+          "choice": "Das ist womöglich eine ansteckende Hauterkrankung. Ich komme lieber nicht zu nahe",
+          "id": 3
+        }
+      ],
+      "answer": "Ich alarmiere die Rettung, wenn die Person nicht reagiert"
+    },
+    {
+      "question": "Wer einen bewusstlosen Menschen findet, prüft unbedingt …",
+      "choices": [
+        {
+          "choice": "die Atmung",
+          "id": 1
+        },
+        {
+          "choice": "den Puls",
+          "id": 2
+        },
+        {
+          "choice": "die Reaktion der Pupillen",
+          "id": 3
+        }
+      ],
+      "answer": "die Atmung"
+    },
+    {
+      "question": "Was sollten Ersthelfende mit einen Fremdkörper in einer Wunde tun?",
+      "choices": [
+        {
+          "choice": "Sie sollten den Fremdkörper auf jeden Fall entfernen",
+          "id": 1
+        },
+        {
+          "choice": "Sie sollten den Fremdkörper in der Wunde belassen",
+          "id": 2
+        },
+        {
+          "choice": "Sie sollten den Fremdkörper nur dann herausziehen, wenn sie sterile Handschuhe tragen",
+          "id": 3
+        }
+      ],
+      "answer": "Sie sollten den Fremdkörper in der Wunde belassen"
+    },
+    {
+      "question": "Erleidet ein Mensch einen Krampfanfall, sollten Sie …",
+      "choices": [
+        {
+          "choice": "... ihm einen Gegenstand zwischen die Zähne schieben, damit er sich nicht auf die Zunge beißt",
+          "id": 1
+        },
+        {
+          "choice": "... lediglich Gegenstände aus seinem unmittelbaren Umfeld entfernen, um Verletzungen vorzubeugen",
+          "id": 2
+        },
+        {
+          "choice": "... die Arme und Beine festhalten, um die Dauer des Anfalls zu verkürzen",
+          "id": 3
+        }
+      ],
+      "answer": "... lediglich Gegenstände aus seinem unmittelbaren Umfeld entfernen, um Verletzungen vorzubeugen"
+    },
+    {
+      "question": "Wie sollten Sie reagieren, wenn ein Mensch die Symptome eines Herzinfarkts oder Schlaganfalls zeigt?",
+      "choices": [
+        {
+          "choice": "Ich fahre ihn selbst in die Klinik, das geht am schnellsten",
+          "id": 1
+        },
+        {
+          "choice": "Ich bringe ihn zum Hausarzt, weil er den Patienten am besten einschätzen kann",
+          "id": 2
+        },
+        {
+          "choice": "Ich rufe sofort den Rettungsdienst",
+          "id": 3
+        }
+      ],
+      "answer": "Ich rufe sofort den Rettungsdienst."
+    },
+    {
+      "question": "Wenn ich einen Bewusstlosen in die stabile Seitenlage gebracht habe, …",
+      "choices": [
+        {
+          "choice": "… muss ich seine Atmung nicht mehr kontrollieren",
+          "id": 1
+        },
+        {
+          "choice": "… muss ich nur dann auf seine Atmung achten, wenn sie unregelmäßig ist",
+          "id": 2
+        },
+        {
+          "choice": "… muss ich seine Atmung weiter überwachen",
+          "id": 3
+        }
+      ],
+      "answer": "… muss ich seine Atmung weiter überwachen"
+    },
+    {
+      "question": "In welcher Frequenz sollte der Brustkorb bei der Herzdruckmassage nach Möglichkeit gedrückt werden?",
+      "choices": [
+        {
+          "choice": "etwa 100 Mal pro Minute",
+          "id": 1
+        },
+        {
+          "choice": "etwa 60 Mal pro Minute",
+          "id": 2
+        },
+        {
+          "choice": "etwa 80 Mal pro Minute",
+          "id": 3
+        }
+      ],
+      "answer": "etwa 100 Mal pro Minute"
+    },
+    {
+      "question": "Was ist das Ziel der stabilen Seitenlage?",
+      "choices": [
+        {
+          "choice": "In dieser Haltung wird ein Schock vermieden",
+          "id": 1
+        },
+        {
+          "choice": "Ein Kreislaufstillstand wird so vermieden",
+          "id": 2
+        },
+        {
+          "choice": "Der Betroffene wird vor dem Ersticken bewahrt",
+          "id": 3
+        }
+      ],
+      "answer": "Der Betroffene wird vor dem Ersticken bewahrt"
+    },
+    {
+      "question": "Wann dürfen Sie Herzdruckmassage und Beatmung beenden?",
+      "choices": [
+        {
+          "choice": "Wenn die Atmung wieder einsetzt",
+          "id": 1
+        },
+        {
+          "choice": "Wenn nach 20 Minuten noch keine Atmung eingesetzt hat",
+          "id": 2
+        },
+        {
+          "choice": "Wenn nach zehn Minuten noch keine Atmung eingesetzt hat",
+          "id": 3
+        }
+      ],
+      "answer": "Wenn die Atmung wieder einsetzt"
+    },
+    {
+      "question": "Auf dem Helm eines bewusstlosen Motorradfahrers verlangt ein Aufkleber, den Helm bei einem Unfall nicht abzunehmen. Was ist zu tun?",
+      "choices": [
+        {
+          "choice": "Der Helm sollte am Kopf verbleiben",
+          "id": 1
+        },
+        {
+          "choice": "Ersthelfer sollten den Helm trotzdem abnehmen",
+          "id": 2
+        },
+        {
+          "choice": "Nur medizinisches Personal darf den Helm abnehmen",
+          "id": 3
+        }
+      ],
+      "answer": "Ersthelfer sollten den Helm trotzdem abnehmen"
+    },
+    {
+      "question": "Wie lagern Sie einen Menschen, der an einem Schock leidet?",
+      "choices": [
+        {
+          "choice": "Ich lagere den Kopf etwas erhöht",
+          "id": 1
+        },
+        {
+          "choice": "Ich versuche ihn zum Gehen zu animieren, damit der Kreislauf angeregt wird",
+          "id": 2
+        },
+        {
+          "choice": "Ich lagere die Beine etwas erhöht",
+          "id": 3
+        }
+      ],
+      "answer": "Ich lagere die Beine etwas erhöht"
+    },
+    {
+      "question": "Sollten Sie eine größere Wunde auswaschen?",
+      "choices": [
+        {
+          "choice": "Nur wenn ich sterile Handschuhe trage",
+          "id": 1
+        },
+        {
+          "choice": "Wunden sollten sofort ausgewaschen werden",
+          "id": 2
+        },
+        {
+          "choice": "Nur wenn sich ätzende Flüssigkeit auf der Haut befindet",
+          "id": 3
+        }
+      ],
+      "answer": "Nur wenn sich ätzende Flüssigkeit auf der Haut befindet"
+    },
+    {
+      "question": "Auf dem Weg nach Hause finden Sie eine regungslos liegende Frau auf dem Gehweg. Was machen Sie zuerst?",
+      "choices": [
+        {
+          "choice": "Ich überprüfe auf körperliche Verletzungen",
+          "id": 1
+        },
+        {
+          "choice": "Ich kontrolliere die Atmung",
+          "id": 2
+        },
+        {
+          "choice": "Ich überprüfe, ob sie ansprechbar ist",
+          "id": 3
+        }
+      ],
+      "answer": "Ich überprüfe, ob sie ansprechbar ist"
+    },
+    {
+      "question": "Sie kommen zu einem Verkehrsunfall. Der Beifahrer hat sich beim Aufprall am Bein verletzt. Wie sollte man eine blutende Verletzung am Bein behandeln?",
+      "choices": [
+        {
+          "choice": "Auswaschen der Wunde mit einer feuchten Kompresse und Abbinden des betroffenen Beins",
+          "id": 1
+        },
+        {
+          "choice": "Kühlen der der Wunde mit Eiswürfeln oder Coolpacks",
+          "id": 2
+        },
+        {
+          "choice": "Anlegen eines Druckverbands",
+          "id": 3
+        }
+      ],
+      "answer": "Anlegen eines Druckverbands"
+    },
+    {
+      "question": "Jede Kette ist nur so stark wie Ihr schwächstes Glied. Welcher der folgenden Stichpunkte ist nicht Teil der Rettungskette?",
+      "choices": [
+        {
+          "choice": "Erste Hilfe",
+          "id": 1
+        },
+        {
+          "choice": "Rettungsdienst",
+          "id": 2
+        },
+        {
+          "choice": "Gabe von Medikamenten durch Ersthelfer",
+          "id": 3
+        }
+      ],
+      "answer": "Gabe von Medikamenten durch Ersthelfer"
+    },
+    {
+      "question": "Sie wollen eine Person erleidet einen Schock und möchten Sie in die Schock-Lage legen. Wann ist diese nicht empfohlen",
+      "choices": [
+        {
+          "choice": "Allergische Reaktion",
+          "id": 1
+        },
+        {
+          "choice": "Verbrennung der Haut",
+          "id": 2
+        },
+        {
+          "choice": "Herzbeschwerden / Herzinfarkt",
+          "id": 3
+        }
+      ],
+      "answer": "Herzbeschwerden / Herzinfarkt"
+    },
+    {
+      "question": "Auf dem Weg nach Hause kommen Sie an einem schweren Unfall vorbei. Wann sind Sie nicht verpflichtet Erste Hilfe zu leisten?",
+      "choices": [
+        {
+          "choice": "Sie sind mit Ihrem Säugling alleine unterwegs",
+          "id": 1
+        },
+        {
+          "choice": "Sie haben es eilig, weil Sie zur Arbeit fahren",
+          "id": 2
+        },
+        {
+          "choice": "Sie ekeln sich vor Blut",
+          "id": 3
+        }
+      ],
+      "answer": "Sie sind mit Ihrem Säugling alleine unterwegs"
+    }
 ]
 }
