@@ -2,71 +2,211 @@
   "data": [
   {
     "question" : "Welches Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
-    "choices": ["Warndreieck", "Wagenheber", "Ersatzreifen", "Nothammer"],
+    "choices": [
+      {
+      "choice": "Warndreieck",
+      "id": 1
+      },
+      {"choice":"Wagenheber",
+        "id": 2
+      },
+      {"choice": "Ersatzreifen",
+        "id": 3
+      },
+      {"choice": "Nothammer",
+      "id": 4}
+    ],
     "answer": "Warndreieck"
   },
-  {
-    "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
-    "choices" : ["Roter, heißer Kopf und Nacken", "Herzrasen", "Zyanose", "Atemnot"],
-    "answer" : "Roter, heißer Kopf und Nacken"
-  },
-  {
-    "question" : "Wann wird ein Druckverband angelegt?",
-    "choices" : ["Bei Schürfwunden", "Bei Verbrennungen", "Bei stark blutenden Wunden", "Bei Frakturen"],
-    "answer" : "Bei stark blutenden Wunden"
-  },
-  {
-
-    "question" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
-    "choices" : ["30 Sekunden", "20 Sekunden", "10 Sekunden", "60 Sekunden"],
-    "answer" : "10 Sekunden"
-  },
-  {
-
-    "question": "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Wahr"
-  },
-  {
-    "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
-    "choices" : ["Nein, das ist zu gefährlich.", "Darf nur von Profis gemacht werden.", "Ja, da sonst Lebensgefahr."],
-    "answer" : "Ja, da sonst Lebensgefahr."
-  },
-  {
-
-    "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
-    "choices" : ["Oberkörper erhöht", "Bauchlage", "Schocklage"],
-    "answer" : "Oberkörper erhöht"
-  },
-  {
-    "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Falsch"
-  },
-  {
-    "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
-    "choices" : ["Person ist bewusstlos und atmet.", "Person ist bewusstlos und atmet nicht", "Person ist bei Bewusstsein."],
-    "answer" : "Person ist bewusstlos und atmet."
-  },
-  {
-    "question" : "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
-    "choices" : ["Gar nicht, so regeneriert Haut besser.", "Kurz kühlen, steril abdecken.", "Ein Druckverband wird angelegt."],
-    "answer" : "Kurz kühlen, steril abdecken."
-  },
-  {
-    "question" : "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
-    "choices" : ["Kutschersitz", "Schocklage", "Bauchlage"],
-    "answer" : "Kutschersitz"
-  },
-  {
-    "question" : "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
-    "choices" : ["30x drücken, 2x beatmen", "15x drücken, 2x beatmen", "30x drücken, 4x beatmen"],
-    "answer" : "30x drücken, 2x beatmen"
-  },
-  {
-    "question" : "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
-    "choices" : ["Wahr", "Falsch"],
-    "answer" : "Wahr"
-      }
+    {
+      "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
+      "choices": [
+        {
+          "choice": "Roter, heißer Kopf und Nacken",
+          "id": 1
+        },
+        {"choice":"Herzrasen",
+          "id": 2
+        },
+        {"choice": "Zyanose",
+          "id": 3
+        },
+        {"choice": "Atemnot",
+          "id": 4}
+      ],
+      "answer": "Roter, heißer Kopf und Nacken"
+    },
+    {
+      "question" : "Wann wird ein Druckverband angelegt?",
+      "choices": [
+        {
+          "choice": "Bei Schürfwunden",
+          "id": 1
+        },
+        {"choice":"Bei Verbrennungen",
+          "id": 2
+        },
+        {"choice": "Bei stark blutenden Wunden",
+          "id": 3
+        },
+        {"choice": "Bei Frakturen",
+          "id": 4}
+      ],
+      "answer": "Bei stark blutenden Wunden"
+    },
+    {
+      "question" : "Wie lange sollte die Atemkontrolle bei einer bewusstlosen Person durchgeführt werden?",
+      "choices": [
+        {
+          "choice": "30 Sekunden",
+          "id": 1
+        },
+        {"choice":"20 Sekunden",
+          "id": 2
+        },
+        {"choice": "60 Sekunden",
+          "id": 3}
+      ],
+      "answer": "10 Sekunden"
+    },
+    {
+      "question" : "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+        ],
+      "answer": "Wahr"
+    },
+    {
+      "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+      "choices": [
+        {
+          "choice": "Nein, das ist zu gefährlich.",
+          "id": 1
+        },
+        {"choice":"Darf nur von Profis gemacht werden.",
+          "id": 2
+        },
+        {"choice": "Ja, da sonst Lebensgefahr.",
+          "id": 3}
+      ],
+      "answer": "Ja, da sonst Lebensgefahr."
+    },
+    {
+      "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
+      "choices": [
+        {
+          "choice": "Oberkörper erhöht",
+          "id": 1
+        },
+        {"choice":"Bauchlage",
+          "id": 2
+        },
+        {"choice": "Schocklage",
+          "id": 3}
+      ],
+      "answer": "Oberkörper erhöht"
+    },
+    {
+      "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Falsch"
+    },
+    {
+      "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
+      "choices": [
+        {
+          "choice": "Person ist bewusstlos und atmet.",
+          "id": 1
+        },
+        {"choice":"Person ist bewusstlos und atmet nicht",
+          "id": 2
+        },
+        {"choice": "Person ist bei Bewusstsein.",
+          "id": 3}
+      ],
+      "answer": "Falsch"
+    },
+    {
+      "question": "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
+      "choices": [
+        {
+          "choice": "Gar nicht, so regeneriert Haut besser.",
+          "id": 1
+        },
+        {
+          "choice": "Kurz kühlen, steril abdecken.",
+          "id": 2
+        },
+        {
+          "choice": "Ein Druckverband wird angelegt.",
+          "id": 3
+        }
+      ],
+      "answer": "Kurz kühlen, steril abdecken."
+    },
+    {
+      "question": "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
+      "choices": [
+        {
+          "choice": "Kutschersitz",
+          "id": 1
+        },
+        {
+          "choice": "Schocklage",
+          "id": 2
+        },
+        {
+          "choice": "Bauchlage",
+          "id": 3
+        }
+      ],
+      "answer": "Kutschersitz"
+    },
+    {
+      "question": "Wie oft muss man bei der Herz-Lungen-Wiederbelebung abwechselnd drücken und beatmen?",
+      "choices": [
+        {
+          "choice": "30x drücken, 2x beatmen",
+          "id": 1
+        },
+        {
+          "choice": "15x drücken, 2x beatmen",
+          "id": 2
+        },
+        {
+          "choice": "30x drücken, 4x beatmen",
+          "id": 3
+        }
+      ],
+      "answer": "30x drücken, 2x beatmen"
+    },
+    {
+      "question": "Epilepsie ist eine chronische Erkrankung, bei der Personen Krampfanfall-ähnliche Zuckungen und Verkrampfungen am ganzen Körper zeigen.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {
+          "choice": "Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Wahr"
+    }
 ]
 }
