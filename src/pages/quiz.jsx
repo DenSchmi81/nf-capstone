@@ -57,12 +57,10 @@ const App = () => {
 					</button>
 				</>
 			) : (
-				<>
-					<p>
-						you made it through all of the questions and had {correctAnswers}/
-						{question.data.length} correct answers!
-					</p>
-				</>
+				<p>
+					you made it through all of the questions and had {correctAnswers}/
+					{question.data.length} correct answers!
+				</p>
 			)}
 		</>
 	);
