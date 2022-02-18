@@ -19,9 +19,9 @@ const App = () => {
 					{question.data[currentQuestion].choices.map(choice => {
 						return (
 							<button
+								key={choice.id}
 								disabled={answerGiven}
 								type="button"
-								key={choice.id}
 								onClick={() => {
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
@@ -43,6 +43,7 @@ const App = () => {
 						question {currentQuestion + 1}/{question.data.length}
 					</h5>
 					<button
+						type="button"
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);
