@@ -8,6 +8,12 @@ const QuizHeader = () => {
 				<Typography variant="h1">Erste Hilfe Quiz</Typography>
 				<Typography variant="h2">Teste Dein Wissen!</Typography>
 			</Stack>
+
+const QuizHeader = () => {
+	return (
+		<header>
+			<h1>Erste Hilfe Quiz</h1>
+			<h2>Teste Dein Wissen!</h2>
 		</header>
 	);
 };
