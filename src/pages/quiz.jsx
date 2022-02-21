@@ -5,13 +5,30 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import Footer from "../organisms/footer";
+import Snackbar from "@mui/material/Snackbar";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
+import Alert from "@mui/material/Alert";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [answerCheck, setAnswerCheck] = useState(null);
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
+	const [open, setOpen] = React.useState(false);
+
+	const handleClick = () => {
+		setOpen(true);
+	};
+
+	const handleClose = (event, reason) => {
+		if (reason === "clickaway") {
+			return;
+		}
+
+		setOpen(false);
+	};
 
 	return (
 		<div>
@@ -32,11 +49,12 @@ const App = () => {
 								onClick={() => {
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
-										setAnswerCheck("correct");
+										setAnswerCheck(true);
 										setCorrectAnswers(previousValue => previousValue + 1);
 									} else {
-										setAnswerCheck("wrong");
+										setAnswerCheck(false);
 									}
+									handleClick();
 								}}
 							>
 								{choice.choice}
@@ -44,7 +62,16 @@ const App = () => {
 						);
 					})}
 					<br />
-					{answerCheck ? `You answer is: ${answerCheck}` : null}
+					{/*SNACK BAR*/}
+					<div>
+						{answerCheck !== null && (
+							<Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+								<Alert severity={answerCheck ? "success" : "error"}>
+									Deine Antwort ist: {answerCheck ? "richtig" : "falsch"}
+								</Alert>
+							</Snackbar>
+						)}
+					</div>
 					<Typography variant="h3">
 						question {currentQuestion + 1}/{question.data.length}
 					</Typography>
