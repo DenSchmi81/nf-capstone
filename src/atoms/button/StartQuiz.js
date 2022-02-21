@@ -1,14 +1,17 @@
 import React from "react";
-/*import "bulma/css/bulma.min.css";*/
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 
 const StartQuiz = ({ onQuizStart }) => {
 	return (
 		<>
-			<h1>Teste Dein Wissen!</h1>
+			<Typography variant="custom" component="h1">
+				Teste Dein Wissen!
+			</Typography>
 			<p>Viel Erfolg!</p>
-			<button type="button" onClick={onQuizStart}>
+			<Button type="button" onClick={onQuizStart}>
 				Los gehts...
-			</button>
+			</Button>
 		</>
 	);
 };

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import question from "../ions/quizData.json";
 import QuizHeader from "../organisms/header/QuizHeader.jsx";
+import Button from "@mui/material/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Footer from "../organisms/footer";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -14,11 +17,13 @@ const App = () => {
 				<>
 					{/** QUIZ-CARD-HEADER */}
 					<QuizHeader />
+
 					{/** QUIZ-CARD-MAIN */}
 					<h2>{question.data[currentQuestion].question}</h2>
 					{question.data[currentQuestion].choices.map(choice => {
 						return (
-							<button
+							<Button
+								size="medium"
 								key={choice.id}
 								disabled={answerGiven}
 								type="button"
@@ -33,7 +38,7 @@ const App = () => {
 								}}
 							>
 								{choice.choice}
-							</button>
+							</Button>
 						);
 					})}
 					{/* QUIZ-CARD-FOOTER*/}
@@ -58,10 +63,11 @@ const App = () => {
 				</>
 			) : (
 				<p>
-					you made it through all of the questions and had {correctAnswers}/
-					{question.data.length} correct answers!
+					Yeah, Du hast es durch alle Fragen geschafft und hattest {correctAnswers} von{" "}
+					{question.data.length} richtig beantwortet!
 				</p>
 			)}
+			<Footer />
 		</div>
 	);
 };
