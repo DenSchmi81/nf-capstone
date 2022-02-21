@@ -66,6 +66,11 @@ const Page = () => {
 					Teste Dein Wissen!
 				</Button>
 			</Stack>
+			<h1>First Aid Hero</h1>
+			<button type="button">
+				<Link href="/quiz">Rette Leben!</Link>
+			</button>
+			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
 };
