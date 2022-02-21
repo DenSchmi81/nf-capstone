@@ -4,10 +4,7 @@ import React from "react";
 const Header = () => {
 	return (
 		<header>
-			<nav data-test-id="navigation">
-				<Link href="/overview">Home</Link>
-				<Link href="/about">About me</Link>
-			</nav>
+			<nav data-test-id="navigation"></nav>
 		</header>
 	);
 };
