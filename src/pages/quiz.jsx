@@ -26,9 +26,9 @@ const App = () => {
 					{question.data[currentQuestion].choices.map(choice => {
 						return (
 							<Button
+								key={choice.id}
 								disabled={answerGiven}
 								size="medium"
-								key={choice.id}
 								onClick={() => {
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
