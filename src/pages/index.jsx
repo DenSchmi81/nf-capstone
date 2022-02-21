@@ -28,7 +28,7 @@ const Page = () => {
 				<title key="title">First Aid Hero</title>
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
-			<Image src={mausLogo} />
+			<Image src={mausLogo} alt="" />
 			<Stack direction="column" sx={{ flexGrow: 1, m: 5, paddingBottom: 5 }}>
 				<Typography
 					variant="h3"
