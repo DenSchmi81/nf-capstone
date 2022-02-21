@@ -16,56 +16,51 @@ const App = () => {
 	return (
 		<div>
 			{question.data[currentQuestion] ? (
-				<>
-					<Stack direction="column" sx={{ m: 2 }} spacing={2}>
-						<QuizHeader />
-						<Card variant="outlined" sx={{ color: "#FF00FF" }}>
-							<Typography component="h2" variant="h2" color="black">
-								{question.data[currentQuestion].question}
-							</Typography>
-						</Card>
-						{question.data[currentQuestion].choices.map(choice => {
-							return (
-								<Button
-									size="medium"
-									key={choice.id}
-									disabled={answerGiven}
-									type="button"
-									onClick={() => {
-										setAnswerGiven(true);
-										if (
-											choice.choice === question.data[currentQuestion].answer
-										) {
-											setAnswerCheck("correct");
-											setCorrectAnswers(previousValue => previousValue + 1);
-										} else {
-											setAnswerCheck("wrong");
-										}
-									}}
-								>
-									{choice.choice}
-								</Button>
-							);
-						})}
-						<br />
-						{answerCheck ? `You answer is: ${answerCheck}` : null}
-						<Typography variant="h3">
-							question {currentQuestion + 1}/{question.data.length}
+				<Stack direction="column" sx={{ m: 2 }} spacing={2}>
+					<QuizHeader />
+					<Card variant="outlined" sx={{ color: "#FF00FF" }}>
+						<Typography component="h2" variant="h2" color="black">
+							{question.data[currentQuestion].question}
 						</Typography>
-						<Button
-							disabled={!answerGiven}
-							onClick={() => {
-								setCurrentQuestion(previousValue => previousValue + 1);
-								setAnswerCheck(null);
-								setAnswerGiven(false);
-							}}
-						>
-							{currentQuestion + 1 === question.data.length
-								? "see results"
-								: "next question"}
-						</Button>
-					</Stack>
-				</>
+					</Card>
+					{question.data[currentQuestion].choices.map(choice => {
+						return (
+							<Button
+								disabled={answerGiven}
+								size="medium"
+								key={choice.id}
+								onClick={() => {
+									setAnswerGiven(true);
+									if (choice.choice === question.data[currentQuestion].answer) {
+										setAnswerCheck("correct");
+										setCorrectAnswers(previousValue => previousValue + 1);
+									} else {
+										setAnswerCheck("wrong");
+									}
+								}}
+							>
+								{choice.choice}
+							</Button>
+						);
+					})}
+					<br />
+					{answerCheck ? `You answer is: ${answerCheck}` : null}
+					<Typography variant="h3">
+						question {currentQuestion + 1}/{question.data.length}
+					</Typography>
+					<Button
+						disabled={!answerGiven}
+						onClick={() => {
+							setCurrentQuestion(previousValue => previousValue + 1);
+							setAnswerCheck(null);
+							setAnswerGiven(false);
+						}}
+					>
+						{currentQuestion + 1 === question.data.length
+							? "see results"
+							: "next question"}
+					</Button>
+				</Stack>
 			) : (
 				<p>
 					Yeah, Du hast es durch alle Fragen geschafft und hattest {correctAnswers} von{" "}
