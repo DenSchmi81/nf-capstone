@@ -6,8 +6,6 @@ import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import Footer from "../organisms/footer";
 import Snackbar from "@mui/material/Snackbar";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
 
