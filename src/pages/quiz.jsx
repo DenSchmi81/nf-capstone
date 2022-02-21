@@ -44,17 +44,6 @@ const App = () => {
 								key={choice.id}
 								disabled={answerGiven}
 								size="medium"
-				<>
-					{/** QUIZ-CARD-HEADER */}
-					<QuizHeader />
-					{/** QUIZ-CARD-MAIN */}
-					<h2>{question.data[currentQuestion].question}</h2>
-					{question.data[currentQuestion].choices.map(choice => {
-						return (
-							<button
-								key={choice.id}
-								disabled={answerGiven}
-								type="button"
 								onClick={() => {
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
@@ -85,18 +74,6 @@ const App = () => {
 						question {currentQuestion + 1}/{question.data.length}
 					</Typography>
 					<Button
-					</button>
-						);
-					})}
-					{/* QUIZ-CARD-FOOTER*/}
-					<br />
-					{answerCheck ? `You answer is: ${answerCheck}` : null}
-					<h5>
-						question {currentQuestion + 1}/{question.data.length}
-					</h5>
-					<button
-						type="button"
-
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);
@@ -116,14 +93,6 @@ const App = () => {
 				</p>
 			)}
 			<Footer />
-					</button>
-				</>
-			) : (
-				<p>
-					you made it through all of the questions and had {correctAnswers}/
-					{question.data.length} correct answers!
-				</p>
-			)}
 		</div>
 	);
 };

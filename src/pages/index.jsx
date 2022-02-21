@@ -9,19 +9,7 @@ import mausLogo from "../ions/icons/mausLogo.png";
 import Card from "@mui/material/Card";
 import Container from "@mui/material/Box";
 
-/*const useStyles = makeStyles({
-	btn: {
-		fontSize: 20,
-		borderRadius: 15,
-		backgroundColor: "#F25764",
-		boxShadow: "2px 2px 0 0 #707070",
-		"&:hover": {
-			boxShadow: "inset 0 0 0 2px #707070",
-			backgroundColor: "#F25764",*/
-
 const Page = () => {
-	/*	const classes = useStyles();*/
-
 	return (
 		<Layout>
 			<Head>
@@ -66,11 +54,6 @@ const Page = () => {
 					Teste Dein Wissen!
 				</Button>
 			</Stack>
-			<h1>First Aid Hero</h1>
-			<button type="button">
-				<Link href="/quiz">Rette Leben!</Link>
-			</button>
-			<a href="tel:+4911880">Notruf</a>
 		</Layout>
 	);
 };
