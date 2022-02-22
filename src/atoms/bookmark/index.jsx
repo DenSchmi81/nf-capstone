@@ -8,7 +8,11 @@ const BookmarkIcon = ({ bookmarked, index }) => {
 	return (
 		<Checkbox
 			checked={bookmarked ? bookmarked : false}
-			icon={<HealingIcon />
-				}
-	)
-}
+			icon={<HealingIcon />}
+			checkedIcon={<HealingTwoToneIcon />}
+			inputProps={{ "aria-label": "controlled"}
+				/>
+				);
+};
+
+	export default BookmarkIcon;

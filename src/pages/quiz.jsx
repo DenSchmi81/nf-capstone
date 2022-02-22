@@ -3,18 +3,24 @@ import question from "../ions/quizData.json";
 import QuizHeader from "../organisms/header/QuizHeader.jsx";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
+import Checkbox from "@mui/material/Checkbox";
 import Stack from "@mui/material/Stack";
+import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";
+import HealingIcon from "@mui/icons-material/Healing";
 import Footer from "../organisms/footer";
 import Snackbar from "@mui/material/Snackbar";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
+import useExerciseMeta from "../../ions/hooks/store/useStore.jsx";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [answerCheck, setAnswerCheck] = useState(null);
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
-	const [open, setOpen] = React.useState(false);
+	const [open, setOpen] = useState(false);
+	const meta = useExerciseMeta(state => state.meta);
+	const setBookmark = useExerciseMeta(state => state.setBookmark);
 
 	const handleClick = () => {
 		setOpen(true);
@@ -34,6 +40,18 @@ const App = () => {
 				<Stack direction="column" sx={{ m: 2 }} spacing={2}>
 					<QuizHeader />
 					<Card variant="outlined" sx={{ color: "#FF00FF" }}>
+						<div align="right">
+							<Checkbox
+								checked={Boolean(meta[id]?.checked)}
+								size="large"
+								icon={<HealingIcon />}
+								checkedIcon={<HealingTwoToneIcon />}
+								inputProps={{ "aria-label": "controlled" }}
+								onChange={event => {
+									setBookmark(id, event.target.checked);
+								}}
+							/>
+						</div>
 						<Typography component="h2" variant="h2" color="black">
 							{question.data[currentQuestion].question}
 						</Typography>
