@@ -11,9 +11,9 @@ import Footer from "../organisms/footer";
 import Snackbar from "@mui/material/Snackbar";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
-import useExerciseMeta from "../../ions/hooks/store/useStore.jsx";
+import useExerciseMeta from "../ions/hooks/store/useStore.jsx";
 
-const App = () => {
+const App = ({ id }) => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [answerCheck, setAnswerCheck] = useState(null);
 	const [answerGiven, setAnswerGiven] = useState(false);
@@ -40,7 +40,7 @@ const App = () => {
 				<Stack direction="column" sx={{ m: 2 }} spacing={2}>
 					<QuizHeader />
 					<Card variant="outlined" sx={{ color: "#FF00FF" }}>
-						<div align="right">
+						<div>
 							<Checkbox
 								checked={Boolean(meta[id]?.checked)}
 								size="large"
@@ -52,7 +52,7 @@ const App = () => {
 								}}
 							/>
 						</div>
-						<Typography component="h2" variant="h2" color="black">
+						<Typography component="h2" variant="h2" color="black" paddingBottom="40px">
 							{question.data[currentQuestion].question}
 						</Typography>
 					</Card>
@@ -61,7 +61,6 @@ const App = () => {
 							<Button
 								key={choice.id}
 								disabled={answerGiven}
-								size="medium"
 								onClick={() => {
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
@@ -89,9 +88,10 @@ const App = () => {
 						)}
 					</div>
 					<Typography variant="h3">
-						question {currentQuestion + 1}/{question.data.length}
+						Frage {currentQuestion + 1} von {question.data.length}
 					</Typography>
 					<Button
+						sx={{ width: "200px", fontSize: "20px" }}
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);
