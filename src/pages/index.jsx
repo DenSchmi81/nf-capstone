@@ -37,7 +37,7 @@ const Page = () => {
 					First Aid Hero
 				</Typography>
 				<Container>
-					<Card sx={{ padding: 3 }}>
+					<Card variant="outlined" sx={{ padding: 3 }}>
 						<Typography component="h2" variant="h3" color="black">
 							Kannst Du im Ernstfall Menschenleben retten?
 						</Typography>

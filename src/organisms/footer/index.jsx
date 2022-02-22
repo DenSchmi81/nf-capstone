@@ -1,7 +1,7 @@
 import * as React from "react";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import HealingIcon from "@mui/icons-material/Healing";
 import HomeIcon from "@mui/icons-material/Home";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
@@ -34,7 +34,7 @@ const Footer = () => {
 				<Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }} elevation={3}>
 					<BottomNavigation value={value} onChange={handleChange}>
 						<BottomNavigationAction icon={<HomeIcon />} href="../" />
-						<BottomNavigationAction icon={<FavoriteIcon />} />
+						<BottomNavigationAction icon={<HealingIcon />} />
 						<BottomNavigationAction icon={<Brightness4Icon />} />
 						<StyledFab
 							color="#F25764"

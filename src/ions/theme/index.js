@@ -12,10 +12,6 @@ const theme = createTheme({
 		},
 	},
 	typography: {
-		custom: {
-			fontFamily: `"Montserrat", sans-serif`,
-			component: "div",
-		},
 		h1: {
 			fontFamily: `"Montserrat", sans-serif`,
 			variant: "h1",
