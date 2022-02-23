@@ -37,10 +37,10 @@ const Footer = () => {
 						<BottomNavigationAction icon={<HealingIcon />} />
 						<BottomNavigationAction icon={<Brightness4Icon />} />
 						<StyledFab
-							color="#F25764"
 							aria-label="add"
 							size="medium"
 							href="tel:+4911880"
+							sx={{ background: "#F25764" }}
 						>
 							<Image src={emergencyCall} />
 						</StyledFab>

@@ -7,20 +7,22 @@ import Checkbox from "@mui/material/Checkbox";
 import Stack from "@mui/material/Stack";
 import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";
 import HealingIcon from "@mui/icons-material/Healing";
+import AddIcon from "@mui/icons-material/Add";
 import Footer from "../organisms/footer";
 import Snackbar from "@mui/material/Snackbar";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
-import useExerciseMeta from "../ions/hooks/store/useStore.jsx";
+import useQuizMeta from "../ions/hooks/store/useStore.jsx";
+import Timer from "../atoms/Timer";
 
-const App = ({ id }) => {
+const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [answerCheck, setAnswerCheck] = useState(null);
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 	const [open, setOpen] = useState(false);
-	const meta = useExerciseMeta(state => state.meta);
-	const setBookmark = useExerciseMeta(state => state.setBookmark);
+	const meta = useQuizMeta(state => state.meta);
+	const setBookmark = useQuizMeta(state => state.setBookmark);
 
 	const handleClick = () => {
 		setOpen(true);
@@ -34,25 +36,36 @@ const App = ({ id }) => {
 		setOpen(false);
 	};
 
+	const id = question.data[currentQuestion] ? question.data[currentQuestion].id : null;
+	console.log(id);
+
 	return (
 		<div>
 			{question.data[currentQuestion] ? (
 				<Stack direction="column" sx={{ m: 2 }} spacing={2}>
 					<QuizHeader />
+					<div>
+						<Timer />
+					</div>
 					<Card variant="outlined" sx={{ color: "#FF00FF" }}>
 						<div>
 							<Checkbox
 								checked={Boolean(meta[id]?.checked)}
 								size="large"
 								icon={<HealingIcon />}
-								checkedIcon={<HealingTwoToneIcon />}
+								checkedIcon={<AddIcon />}
 								inputProps={{ "aria-label": "controlled" }}
 								onChange={event => {
 									setBookmark(id, event.target.checked);
 								}}
 							/>
 						</div>
-						<Typography component="h2" variant="h2" color="black" paddingBottom="40px">
+						<Typography
+							component="h2"
+							variant="h2"
+							paddingBottom="40px"
+							sx={{ color: "black" }}
+						>
 							{question.data[currentQuestion].question}
 						</Typography>
 					</Card>
@@ -63,7 +76,7 @@ const App = ({ id }) => {
 								disabled={answerGiven}
 								onClick={() => {
 									setAnswerGiven(true);
-									if (choice.choice === question.data[currentQuestion].answer) {
+									if (choice === question.data[currentQuestion].answer) {
 										setAnswerCheck(true);
 										setCorrectAnswers(previousValue => previousValue + 1);
 									} else {

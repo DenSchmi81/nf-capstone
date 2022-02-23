@@ -17,7 +17,7 @@ const Page = () => {
 				<meta key="description" name="description" content="First Aid project" />
 			</Head>
 			<Image src={mausLogo} alt="" />
-			<Stack direction="column" sx={{ flexGrow: 1, m: 5, paddingBottom: 5 }}>
+			<Stack direction="column" sx={{ flexGrow: 1, margin: 6 }}>
 				<Typography
 					variant="h3"
 					fontFamily="Montserrat, cursive"
@@ -37,11 +37,14 @@ const Page = () => {
 					First Aid Hero
 				</Typography>
 				<Container>
-					<Card variant="outlined" sx={{ padding: 3 }}>
-						<Typography component="h2" variant="h3" color="black">
-							Kannst Du im Ernstfall Menschenleben retten?
-						</Typography>
-					</Card>
+					<Stack direction="column" sx={{ flexGrow: 1, marginTop: 5 }}>
+						<Card variant="outlined" sx={{ padding: 3 }}>
+							<Typography component="h2" variant="h3" color="black">
+								Hand aufs Herz: kannst Du im Ernstfall Menschenleben retten?
+								Überprüfe mit diesem Quiz Dein Wissen.
+							</Typography>
+						</Card>
+					</Stack>
 				</Container>
 				<Button
 					sx={{ marginTop: "50%" }}
