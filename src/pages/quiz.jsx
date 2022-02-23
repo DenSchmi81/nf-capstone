@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Checkbox from "@mui/material/Checkbox";
 import Stack from "@mui/material/Stack";
-import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";
+/*import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";*/
 import HealingIcon from "@mui/icons-material/Healing";
 import AddIcon from "@mui/icons-material/Add";
 import Footer from "../organisms/footer";
