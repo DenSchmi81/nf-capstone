@@ -3,7 +3,7 @@ import Head from "next/head";
 /*import CardExercise from "../../molecules/card-exercise";*/
 import Layout from "../../organisms/layout";
 import useStore from "../../ions/hooks/store/useStore";
-import useGet from "../../ions/hooks/fetch/get";
+/*import useGet from "../../ions/hooks/fetch/get";*/
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
