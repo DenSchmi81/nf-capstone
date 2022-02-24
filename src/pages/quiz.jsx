@@ -168,7 +168,7 @@ const App = () => {
 					<Box>
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
-								Soviel Zeit hast Du gebraucht: {mm}:{ss}
+								Von 10 Minuten hattest Du noch {mm}:{ss} über...
 							</Typography>
 						</Card>
 					</Box>
