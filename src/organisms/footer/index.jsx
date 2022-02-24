@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import * as React from "react";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -8,6 +9,7 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import { styled } from "@mui/material/styles";
 import Fab from "@mui/material/Fab";
 import Paper from "@mui/material/Paper";
+import useCountdown from "../../ions/hooks/store/useCountdown";
 import emergencyCall from "../../ions/icons/emergencyCall.png";
 import Image from "next/image";
 import useColorMode from "/src/ions/hooks/store/useColorMode";
@@ -22,22 +24,29 @@ const StyledFab = styled(Fab)({
 });
 
 const Footer = () => {
-	const [value, setValue] = React.useState("recents");
-	const colorMode = useColorMode(state => state.colorMode);
+	const { push, asPath } = useRouter();
 	const toggleColorMode = useColorMode(state => state.toggleColorMode);
-
-	const handleChange = (event, newValue) => {
-		setValue(newValue);
-	};
-	console.log(colorMode);
+	const setQuizEnd = useCountdown(state => state.setQuizEnd);
 
 	return (
 		<footer>
 			<BottomNavigation sx={{ mt: 5, visibility: "hidden" }} />
 			<Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }} elevation={3}>
-				<BottomNavigation value={value} onChange={handleChange}>
-					<BottomNavigationAction icon={<HomeIcon />} href="../" />
-					<BottomNavigationAction icon={<HealingIcon />} href="../bookmark" />
+				<BottomNavigation value={asPath}>
+					<BottomNavigationAction
+						value="/"
+						icon={<HomeIcon />}
+						onClick={() => {
+							push("/");
+						}}
+					/>
+					<BottomNavigationAction
+						value="/bookmark"
+						icon={<HealingIcon />}
+						onClick={() => {
+							push("/bookmark");
+						}}
+					/>
 					<BottomNavigationAction
 						button
 						icon={<Brightness4Icon />}
@@ -45,15 +54,27 @@ const Footer = () => {
 							toggleColorMode();
 						}}
 					/>
-					<StyledFab
-						aria-label="add"
-						size="medium"
-						href="tel:+4911880"
-						sx={{ background: "#F25764" }}
-					>
-						<Image src={emergencyCall} />
-					</StyledFab>
-					<BottomNavigationAction icon={<RestartAltIcon />} href="../quiz" />
+					{asPath === "/quiz" || asPath === "/bookmark" ? (
+						""
+					) : (
+						<StyledFab
+							aria-label="add"
+							size="medium"
+							href="tel:+4911880"
+							sx={{ background: "#F25764" }}
+						>
+							<Image src={emergencyCall} alt="" />
+						</StyledFab>
+					)}
+
+					<BottomNavigationAction
+						button
+						icon={<RestartAltIcon />}
+						href="../quiz"
+						onClick={() => {
+							setQuizEnd(Date.now() + 10 * 60000);
+						}}
+					/>
 				</BottomNavigation>
 			</Paper>
 		</footer>
