@@ -5,15 +5,14 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Checkbox from "@mui/material/Checkbox";
 import Stack from "@mui/material/Stack";
-/*import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";*/
+import HealingTwoToneIcon from "@mui/icons-material/HealingTwoTone";
 import HealingIcon from "@mui/icons-material/Healing";
-import AddIcon from "@mui/icons-material/Add";
 import Footer from "../organisms/footer";
 import Snackbar from "@mui/material/Snackbar";
 import Typography from "@mui/material/Typography";
 import Alert from "@mui/material/Alert";
 import useQuizMeta from "../ions/hooks/store/useStore.jsx";
-import Timer from "../atoms/Timer";
+import Countdown from "react-countdown";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -24,6 +23,7 @@ const App = () => {
 	const meta = useQuizMeta(state => state.meta);
 	const setBookmark = useQuizMeta(state => state.setBookmark);
 
+	/*SNACKBAR HANDLER: start*/
 	const handleClick = () => {
 		setOpen(true);
 	};
@@ -35,39 +35,59 @@ const App = () => {
 
 		setOpen(false);
 	};
+	/*SNACKBAR HANDLER: end*/
+
+	/*TIMER HANDLER: start*/
+	const renderer = ({ seconds, completed, api }) => {
+		if (completed) {
+			api.start();
+			return null;
+		} else {
+			return <span>{seconds}</span>;
+		}
+	};
+
+	const handleOnComplete = () => {
+		setCurrentQuestion(previousValue => previousValue + 1);
+		console.log(currentQuestion);
+	};
+	/*TIMER HANDLER: end*/
 
 	const id = question.data[currentQuestion] ? question.data[currentQuestion].id : null;
-	console.log(id);
 
 	return (
 		<div>
 			{question.data[currentQuestion] ? (
-				<Stack direction="column" sx={{ m: 2 }} spacing={2}>
+				<Stack direction="column" sx={{ m: 1.5 }} spacing={1}>
 					<QuizHeader />
 					<div>
-						<Timer />
+						{/*TIMER*/}
+						<Countdown
+							date={Date.now() + 10000}
+							renderer={renderer}
+							onComplete={() => handleOnComplete()}
+						/>
 					</div>
 					<Card variant="outlined" sx={{ color: "#FF00FF" }}>
-						<div>
-							<Checkbox
-								checked={Boolean(meta[id]?.checked)}
-								size="large"
-								icon={<HealingIcon />}
-								checkedIcon={<AddIcon />}
-								inputProps={{ "aria-label": "controlled" }}
-								onChange={event => {
-									setBookmark(id, event.target.checked);
-								}}
-							/>
-						</div>
 						<Typography
 							component="h2"
 							variant="h2"
-							paddingBottom="40px"
+							paddingTop="10px"
+							paddingBottom="10px"
 							sx={{ color: "black" }}
 						>
 							{question.data[currentQuestion].question}
 						</Typography>
+						<Checkbox
+							checked={Boolean(meta[id]?.checked)}
+							size="large"
+							icon={<HealingIcon />}
+							checkedIcon={<HealingTwoToneIcon />}
+							inputProps={{ "aria-label": "controlled" }}
+							onChange={event => {
+								setBookmark(id, event.target.checked);
+							}}
+						/>
 					</Card>
 					{question.data[currentQuestion].choices.map(choice => {
 						return (
@@ -104,7 +124,7 @@ const App = () => {
 						Frage {currentQuestion + 1} von {question.data.length}
 					</Typography>
 					<Button
-						sx={{ width: "200px", fontSize: "20px" }}
+						sx={{ width: "200px", fontSize: "16px", align: "center" }}
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);

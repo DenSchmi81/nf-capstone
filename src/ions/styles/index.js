@@ -1,5 +1,4 @@
 import { css } from "@emotion/react";
-import link from "next/link";
 
 export const globalStyle = css`
 	*,

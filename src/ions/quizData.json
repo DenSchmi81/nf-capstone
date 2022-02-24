@@ -24,7 +24,7 @@
       "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
       "choices": [
         {
-          "choice": "Roter, heißer Kopf und Nacken",
+          "choice": "Roter, heißer Kopf & Nacken",
           "id": 1
         },
         {"choice":"Herzrasen",
@@ -63,7 +63,7 @@
           "choice": "30 Sekunden",
           "id": 1
         },
-        {"choice":"20 Sekunden",
+        {"choice":"10 Sekunden",
           "id": 2
         },
         {"choice": "60 Sekunden",
@@ -88,16 +88,16 @@
       "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
       "choices": [
         {
-          "choice": "Nein, das ist zu gefährlich.",
+          "choice": "Nein, zu gefährlich",
           "id": 1
         },
-        {"choice":"Darf nur von Profis gemacht werden.",
+        {"choice":"Darf nur der Notarzt",
           "id": 2
         },
-        {"choice": "Ja, da sonst Lebensgefahr.",
+        {"choice": "Ja, da sonst Lebensgefahr",
           "id": 3}
       ],
-      "answer": "Ja, da sonst Lebensgefahr."
+      "answer": "Ja, da sonst Lebensgefahr"
     },
     {"id": "6e5becc7-76ad-4f14-8f6f-1afb641d48aa",
       "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
@@ -131,13 +131,13 @@
       "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
       "choices": [
         {
-          "choice": "Person ist bewusstlos und atmet.",
+          "choice": "Person bewusstlos & atmet.",
           "id": 1
         },
-        {"choice":"Person ist bewusstlos und atmet nicht",
+        {"choice":"Person bewusstlos & atmet nicht",
           "id": 2
         },
-        {"choice": "Person ist bei Bewusstsein.",
+        {"choice": "Person bei Bewusstsein.",
           "id": 3}
       ],
       "answer": "Falsch"

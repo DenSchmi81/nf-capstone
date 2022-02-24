@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Countdown from "react-countdown";
+/*import React, { useState, useEffect } from "react";
 
-const Timer = ({}) => {
-	const [timer, setTimer] = useState(10);
+	export default function Timer() {
+		const [timer, setTimer] = useState(10);
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setTimer(time => time - 1);
-		}, 1000);
-	});
-	return timer;
-};
-
-export default Timer;
+		useEffect(() => {
+			const interval = setInterval = setInterval => {
+				setTimer((prev) => prev - 1);
+			}, 1000);
+			});
+			return <div></div>;*/
+	}

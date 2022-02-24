@@ -5,9 +5,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Image from "next/image";
-import mausLogo from "../ions/icons/mausLogo.png";
+import mausLogo from "../../../nf-capstone-2/src/ions/icons/mausLogo.png";
 import Card from "@mui/material/Card";
-import Container from "@mui/material/Box";
 
 const Page = () => {
 	return (
@@ -36,20 +35,17 @@ const Page = () => {
 				>
 					First Aid Hero
 				</Typography>
-				<Container>
-					<Stack direction="column" sx={{ flexGrow: 1, marginTop: 5 }}>
-						<Card variant="outlined" sx={{ padding: 3 }}>
-							<Typography component="h2" variant="h3" color="black">
-								Hand aufs Herz: kannst Du im Ernstfall Menschenleben retten?
-								Überprüfe mit diesem Quiz Dein Wissen.
-							</Typography>
-						</Card>
-					</Stack>
-				</Container>
+				<Stack direction="column" sx={{ flexGrow: 1, marginTop: 3 }}>
+					<Card variant="outlined" sx={{ padding: 3, boxShadow: "0 3px 8px 2px" }}>
+						<Typography component="h2" variant="h3" color="black">
+							Hand aufs Herz: kannst Du im Ernstfall Menschenleben retten? Überprüfe
+							mit diesem Quiz Dein Wissen.
+						</Typography>
+					</Card>
+				</Stack>
 				<Button
-					sx={{ marginTop: "50%" }}
+					sx={{ marginTop: "10%" }}
 					fontWeight="200"
-					type="button"
 					variant="contained"
 					color="error"
 					href="/quiz"

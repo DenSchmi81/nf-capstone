@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-	palette: {
+	/*	palette: {
 		primary: {
 			main: "#049DD9",
 			contrastText: "#FFF",
@@ -10,7 +10,7 @@ const theme = createTheme({
 			main: "#F2E205",
 			contrastText: "#049DD9",
 		},
-	},
+	},*/
 	typography: {
 		h1: {
 			fontFamily: `"Montserrat", sans-serif`,
@@ -52,7 +52,7 @@ const theme = createTheme({
 					color: "white",
 					fontWeight: 500,
 					fontSize: 18,
-					height: 50,
+					height: 45,
 					padding: "0 30px",
 					paddingColor: "white",
 					"&:hover": { backgroundColor: "#00FF00", color: "#000000" },

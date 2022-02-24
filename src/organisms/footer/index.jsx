@@ -15,7 +15,7 @@ import Image from "next/image";
 const StyledFab = styled(Fab)({
 	position: "absolute",
 	zIndex: 1,
-	top: -30,
+	top: -25,
 	left: 0,
 	right: 0,
 	margin: "0 auto",
@@ -34,7 +34,7 @@ const Footer = () => {
 				<Paper sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }} elevation={3}>
 					<BottomNavigation value={value} onChange={handleChange}>
 						<BottomNavigationAction icon={<HomeIcon />} href="../" />
-						<BottomNavigationAction icon={<HealingIcon />} />
+						<BottomNavigationAction icon={<HealingIcon />} href="../bookmark" />
 						<BottomNavigationAction icon={<Brightness4Icon />} />
 						<StyledFab
 							aria-label="add"
