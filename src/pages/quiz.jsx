@@ -21,7 +21,7 @@ import useColorMode from "../ions/hooks/store/useColorMode";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [setAnswerCheck] = useState(null);
+	const [answerCheck, setAnswerCheck] = useState(null);
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 	const meta = useQuizMeta(state => state.meta);

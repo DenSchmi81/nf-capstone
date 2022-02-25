@@ -28,7 +28,7 @@ const Page = () => {
 			>
 				<Box sx={{ textAlign: "center" }}>
 					<Box>
-						<LogoComponent color="hsl(60, 30%, 96%)" size={45} />
+						<LogoComponent color="hsl(60, 30%, 96%)" size={100} />
 					</Box>
 					<Typography
 						variant="h4"
