@@ -15,6 +15,7 @@ export const getTime = ms => {
 };
 
 const useCountdown = create(
+
 	persist(
 		set => ({
 			quizEnd: null,
