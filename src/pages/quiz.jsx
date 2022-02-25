@@ -18,9 +18,6 @@ import Countdown from "react-countdown";
 import LinearProgress from "@mui/material/LinearProgress";
 import useCountdown, { getTime } from "/src/ions/hooks/store/useCountdown";
 
-import useColorMode from "../ions/hooks/store/useColorMode";
-
-
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -34,9 +31,6 @@ const App = () => {
 	const calcTimeDifference = useCountdown(state => state.calcTimeDifference);
 	const differenceTime = useCountdown(state => state.differenceTime);
 	const { mm, ss } = getTime(differenceTime);
-
-	const colorMode = useColorMode(state => state.colorMode);
-
 
 	const Completionist = () => <span>You are good to go!</span>;
 
@@ -160,18 +154,14 @@ const App = () => {
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
 								Du hast es durch alle Fragen geschafft und hattest {correctAnswers}{" "}
-
 								von {question.data.length} richtig beantwortet!
-
 							</Typography>
 						</Card>
 					</Box>
 					<Box>
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
-
 								Von 10 Minuten hattest Du noch {mm}:{ss} über...
-
 							</Typography>
 						</Card>
 					</Box>
