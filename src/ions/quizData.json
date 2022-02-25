@@ -1,22 +1,23 @@
 {
   "data": [
-  {
-    "id": "043e5ccc-ad51-4af0-a530-698861fa3562",
-    "question" : "Welches Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
-    "choices": [
-      {
-      "choice": "Warndreieck",
-      "id": 1
-      },
-      {"choice":"Wagenheber",
-        "id": 2
-      },
-      {"choice": "Ersatzreifen",
-        "id": 3
-      }
-    ],
-    "answer": "Warndreieck"
-  },
+
+    {
+      "id": "043e5ccc-ad51-4af0-a530-698861fa3562",
+      "question" : "Welches Hilfsmittel braucht man, um einen Verkehrsunfall zu sichern?",
+      "choices": [
+        {
+          "choice": "Warndreieck",
+          "id": 1
+        },
+        {"choice":"Wagenheber",
+          "id": 2
+        },
+        {"choice": "Ersatzreifen",
+          "id": 3
+        }
+      ],
+      "answer": "Warndreieck"
+    },
     {
       "id": "a4259152-3b22-4669-9ea3-37e5ff5a2f38",
       "question" : "An welchen Symptomen erkennst du einen Sonnenstich?",
@@ -68,6 +69,114 @@
           "id": 3}
       ],
       "answer": "10 Sekunden"
+    },
+    {"id": "2ef75d32-24d5-4166-b9a5-45577ed53e0f",
+      "question" : "Großflächige Verbrennungen werden nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Wahr"
+    },
+    {"id": "546f98b2-1000-4198-9dbc-7866a243ff9c",
+      "question" : "Darf man den Helm eines verunfallten Motorradfahrenden abnehmen, wenn er/sie  bewusstlos ist?",
+      "choices": [
+        {
+          "choice": "Nein, zu gefährlich",
+          "id": 1
+        },
+        {"choice":"Darf nur der Notarzt",
+          "id": 2
+        },
+        {"choice": "Ja, da sonst Lebensgefahr",
+          "id": 3}
+      ],
+      "answer": "Ja, da sonst Lebensgefahr"
+    },
+    {"id": "6e5becc7-76ad-4f14-8f6f-1afb641d48aa",
+      "question" : "Wie sollte man eine Person mit Herzinfarkt lagern?",
+      "choices": [
+        {
+          "choice": "Oberkörper erhöht",
+          "id": 1
+        },
+        {"choice":"Bauchlage",
+          "id": 2
+        },
+        {"choice": "Schocklage",
+          "id": 3}
+      ],
+      "answer": "Oberkörper erhöht"
+    },
+    {"id": "e8a18043-6eaa-4d0e-a26f-805099ef0dd7",
+      "question" : "Bei einem Sonnenstich werden Kopf und Nacken des Betroffenen nicht gekühlt, da eine dadurch entstehende Unterkühlung sehr wahrscheinlich ist.",
+      "choices": [
+        {
+          "choice": "Wahr",
+          "id": 1
+        },
+        {"choice":"Falsch",
+          "id": 2
+        }
+      ],
+      "answer": "Falsch"
+    },
+    {"id": "f234a44b-3290-444d-8efe-36844dd9e105",
+      "question" : "In welchem Fall legt man eine Person in die Stabile Seitenlage?",
+      "choices": [
+        {
+          "choice": "Person bewusstlos & atmet",
+          "id": 1
+        },
+        {"choice":"Person atmet nicht",
+          "id": 2
+        },
+        {"choice": "Bei starken Blutungen",
+          "id": 3}
+      ],
+      "answer": "Person bewusstlos & atmet"
+    },
+    {"id": "017befd2-5fbd-48ce-888f-f17b1711e39e",
+      "question": "Eine Freundin von Dir hat sich die Handinnenfläche verbrannt. Wie wird die Verbrennung richtig versorgt?",
+      "choices": [
+        {
+          "choice": "Mit Mehl bestäuben",
+          "id": 1
+        },
+        {
+          "choice": "Kurz kühlen, steril verbinden",
+          "id": 2
+        },
+        {
+          "choice": "Druckverband anlegen",
+          "id": 3
+        }
+      ],
+      "answer": "Kurz kühlen, steril verbinden"
+    },
+    {"id": "f847f888-b0f7-48da-b145-279b80174b00",
+      "question": "Wie sollte eine Person mit einem Asthmaanfall gelagert werden?",
+      "choices": [
+        {
+          "choice": "Kutschersitz",
+          "id": 1
+        },
+        {
+          "choice": "Schocklage",
+          "id": 2
+        },
+        {
+          "choice": "Bauchlage",
+          "id": 3
+        }
+      ],
+      "answer": "Kutschersitz"
+
     }
-]
+  ]
 }

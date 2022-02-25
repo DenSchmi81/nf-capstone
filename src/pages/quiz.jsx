@@ -20,7 +20,7 @@ import useCountdown, { getTime } from "/src/ions/hooks/store/useCountdown";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [answerCheck, setAnswerCheck] = useState(null);
+
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 	const meta = useQuizMeta(state => state.meta);
@@ -35,7 +35,6 @@ const App = () => {
 	const Completionist = () => <span>You are good to go!</span>;
 
 	const renderer = ({ total, completed }) => {
-		console.log((total * 1.667) / 10000);
 		if (completed) {
 			// Render a completed state
 			return <Completionist />;
@@ -62,8 +61,6 @@ const App = () => {
 			}
 		);
 	};
-	console.log(answerCheck);
-	console.log(question.data.length);
 	//Time of Quiz Start + 10 minutes
 	const quizEnd = useCountdown(state => state.quizEnd);
 	return (
@@ -109,11 +106,9 @@ const App = () => {
 									);
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
-										setAnswerCheck(true);
 										setCorrectAnswers(previousValue => previousValue + 1);
 										handleSnackbar(true);
 									} else {
-										setAnswerCheck(false);
 										handleSnackbar(false);
 									}
 								}}
@@ -140,7 +135,6 @@ const App = () => {
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);
-							setAnswerCheck(null);
 							setAnswerGiven(false);
 							if (currentQuestion + 1 === question.data.length) {
 								setPersonalTime(Date.now());
@@ -160,15 +154,14 @@ const App = () => {
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
 								Du hast es durch alle Fragen geschafft und hattest {correctAnswers}{" "}
-								von {question.data.length} richtig beantwortet! Soviel Zeit hast Du
-								gebraucht: {mm}:{ss}
+								von {question.data.length} richtig beantwortet!
 							</Typography>
 						</Card>
 					</Box>
 					<Box>
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
-								Soviel Zeit hast Du gebraucht: {mm}:{ss}
+								Von 10 Minuten hattest Du noch {mm}:{ss} über...
 							</Typography>
 						</Card>
 					</Box>
