@@ -13,6 +13,7 @@ const App = ({ Component, pageProps }) => {
 		setTheme(colorMode ? lightTheme : darkTheme);
 	}, [colorMode]);
 	console.log(colorMode);
+
 	return (
 		<ThemeProvider theme={theme}>
 			<SnackbarProvider
