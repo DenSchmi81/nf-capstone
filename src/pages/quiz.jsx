@@ -21,7 +21,7 @@ import useColorMode from "../ions/hooks/store/useColorMode";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [answerCheck, setAnswerCheck] = useState(null);
+
 	const [answerGiven, setAnswerGiven] = useState(false);
 	const [correctAnswers, setCorrectAnswers] = useState(0);
 	const meta = useQuizMeta(state => state.meta);
@@ -109,11 +109,9 @@ const App = () => {
 									);
 									setAnswerGiven(true);
 									if (choice.choice === question.data[currentQuestion].answer) {
-										setAnswerCheck(true);
 										setCorrectAnswers(previousValue => previousValue + 1);
 										handleSnackbar(true);
 									} else {
-										setAnswerCheck(false);
 										handleSnackbar(false);
 									}
 								}}
@@ -140,7 +138,6 @@ const App = () => {
 						disabled={!answerGiven}
 						onClick={() => {
 							setCurrentQuestion(previousValue => previousValue + 1);
-							setAnswerCheck(null);
 							setAnswerGiven(false);
 							if (currentQuestion + 1 === question.data.length) {
 								setPersonalTime(Date.now());
