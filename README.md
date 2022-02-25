@@ -1,128 +1,22 @@
-# Next App
+# Capstone Project
+Welcome to my capstone project created at the bootcamp from neue fische.
 
-This is a template for a Next.js app.
+## First Aid Buddy
+Hand on heart: How long has it been since your first aid course? Can you take the necessary measures to save a person's life in an emergency? 
 
-It uses the following tools/libraries:
+With the quiz app First Aid Hero you can refresh your knowledge in a playful way. Work through questions and fight against time, just like in real life. At the end you will receive a score and you can bookmark difficult questions.
 
-* [Storybook](https://storybook.js.org/)
-* [Cypress](https://cypress.io/)
-* [Jest](https://jestjs.io/)
-* [Commitlint](https://commitlint.js.org/)
-* [Stylelint](https://stylelint.io/)
-* [Eslint](https://eslint.org/)
-* [Prettier](https://prettier.io/)
+### Demo
+You can find the hosted version on vercel: This demo is optimized for mobile screens: [First Aid Hero](https://nf-capstone-lpw01ia4r-denschmi81.vercel.app/)
 
-## Getting started
+## Tech Stack
+REACT | REACT-Router | Custom Hooks | Next.js | local storage | Material UI | Axios | Zustand.js | Adobe XD
 
-**Run the development server:**
-
-```bash
-npm run dev
-```
-
-**Run storybook:**
-
-```shell
-npm run storybook
-```
+![First Aid Hero](https://user-images.githubusercontent.com/94965417/155703043-67f93851-3e49-4cd3-8989-2604de26fcf6.png)
 
 
-## Atomic design
 
-We use atomic design. You can read more about our decision in the
-[documentation](./docs/ATOMIC_DESIGN.md).
-
-## Behavior Driven Development
-
-We use behavior tests. You can read more about our decision in the
-[documentation](./docs/BEHAVIOR_DRIVEN_DEVELOPMENT.md).
-
-## Test Driven Development
-
-We jest to write unit tests. Please look at the Documentation for [Jest](https://jestjs.io/)
-and [testing-library](https://testing-library.com/docs/react-testing-library/intro/).
-
-## Commitlint
-
-We use commitlint to ensure conventional commit messages. You can read more about our decision in
-the [documentation](./docs/COMMITS.md).
+https://user-images.githubusercontent.com/94965417/155703546-02a5150c-f1ef-4c99-abae-8ad05b0481f2.mp4
 
 
-## Commands
 
-**Run the development server:**
-
-```bash
-npm run dev
-```
-
-**Build:**
-
-```shell
-npm run build
-```
-
-**Run storybook:**
-
-```shell
-npm run storybook
-```
-
-**Build storybook:**
-
-```shell
-npm run storybook:build
-```
-
-**Run e2e tests:**
-
-```shell
-npm run cypress # local without server
-# npm run cypress:run # headless
-# npm run test:e2e # with server
-```
-
-**Run unit tests:**
-
-```shell
-npm run jest
-# npm run jest:watch # watch
-# npm run test:unit # same as "npm run jest"
-```
-
-**Run all tests:**
-
-```shell
-npm run test
-```
-
-**Run stylelint**
-
-```shell
-npm run stylelint
-```
-
-**Run eslint**
-
-```shell
-npm run eslint
-```
-
-**Run all linters**
-
-```shell
-npm run lint
-```
-
-## Skipping linters
-
-If you need to skip a linter you can add the `--no-verify` flag.
-
-> Warning! We strongly advise against skipping linters.
-
-```shell
-# Skipping commitlint
-git commit README.md -m "this is a dirty commit" --no-verify
-# Skipping linters
-git push --no-verify
-```
