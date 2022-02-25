@@ -17,6 +17,7 @@ import { useSnackbar } from "notistack";
 import Countdown from "react-countdown";
 import LinearProgress from "@mui/material/LinearProgress";
 import useCountdown, { getTime } from "/src/ions/hooks/store/useCountdown";
+import useColorMode from "../ions/hooks/store/useColorMode";
 
 const App = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -31,11 +32,11 @@ const App = () => {
 	const calcTimeDifference = useCountdown(state => state.calcTimeDifference);
 	const differenceTime = useCountdown(state => state.differenceTime);
 	const { mm, ss } = getTime(differenceTime);
+	const colorMode = useColorMode(state => state.colorMode);
 
 	const Completionist = () => <span>You are good to go!</span>;
 
 	const renderer = ({ total, completed }) => {
-		console.log((total * 1.667) / 10000);
 		if (completed) {
 			// Render a completed state
 			return <Completionist />;
@@ -62,8 +63,7 @@ const App = () => {
 			}
 		);
 	};
-	console.log(answerCheck);
-	console.log(question.data.length);
+	console.log(colorMode);
 	//Time of Quiz Start + 10 minutes
 	const quizEnd = useCountdown(state => state.quizEnd);
 	return (
@@ -160,8 +160,7 @@ const App = () => {
 						<Card variant="outlined" sx={{ p: 1, textAlign: "center" }}>
 							<Typography variant="h6" color="hsl(231, 15%, 18%)">
 								Du hast es durch alle Fragen geschafft und hattest {correctAnswers}{" "}
-								von {question.data.length} richtig beantwortet! Soviel Zeit hast Du
-								gebraucht: {mm}:{ss}
+								von {question.data.length} richtig beantwortet!
 							</Typography>
 						</Card>
 					</Box>

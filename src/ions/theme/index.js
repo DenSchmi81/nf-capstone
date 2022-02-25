@@ -39,6 +39,7 @@ export const lightTheme = createTheme({
 		h4: {
 			fontFamily: `"Montserrat", sans-serif`,
 			fontStyle: "italic",
+			color: "white",
 		},
 		h5: {
 			color: "hsl(60, 30%, 96%)",
@@ -48,6 +49,15 @@ export const lightTheme = createTheme({
 		},
 	},
 	components: {
+		MuiLinearProgress: {
+			styleOverrides: {
+				root: {
+					"&.MuiLinearProgress-root": {
+						backgroundColor: "hsl(197, 96%, 33%)",
+					},
+				},
+			},
+		},
 		MuiButtonBase: {
 			styleOverrides: {
 				root: {

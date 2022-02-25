@@ -15,33 +15,35 @@ export const getTime = ms => {
 };
 
 const useCountdown = create(
-	persist(set => ({
-		quizEnd: null,
-		personalTime: null,
-		differenceTime: null,
-		setQuizEnd: timeStamp => {
-			set({ quizEnd: timeStamp });
-		},
-		setPersonalTime: timeStamp => {
-			set({ personalTime: timeStamp });
-		},
-		setTimeDifference: () => {
-			set(
-				produce(state => {
-					state.differenceTime = state.quizEnd - state.personalTime;
-				})
-			);
-		},
-		calcTimeDifference: () => {
-			set(
-				produce(state => {
-					const calcDifferenceInMinutes = (state.differenceTime % 86400000) % 3600000; // minutes
-					state.differenceTime = calcDifferenceInMinutes;
-				})
-			);
-		},
-	})),
-	{ name: "firstAidCountdown" }
+	persist(
+		set => ({
+			quizEnd: null,
+			personalTime: null,
+			differenceTime: null,
+			setQuizEnd: timeStamp => {
+				set({ quizEnd: timeStamp });
+			},
+			setPersonalTime: timeStamp => {
+				set({ personalTime: timeStamp });
+			},
+			setTimeDifference: () => {
+				set(
+					produce(state => {
+						state.differenceTime = state.quizEnd - state.personalTime;
+					})
+				);
+			},
+			calcTimeDifference: () => {
+				set(
+					produce(state => {
+						const calcDifferenceInMinutes = (state.differenceTime % 86400000) % 3600000; // minutes
+						state.differenceTime = calcDifferenceInMinutes;
+					})
+				);
+			},
+		}),
+		{ name: "firstAidCountdown" }
+	)
 );
 
 export default useCountdown;

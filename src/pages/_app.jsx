@@ -12,7 +12,7 @@ const App = ({ Component, pageProps }) => {
 	useEffect(() => {
 		setTheme(colorMode ? lightTheme : darkTheme);
 	}, [colorMode]);
-
+	console.log(colorMode);
 	return (
 		<ThemeProvider theme={theme}>
 			<SnackbarProvider
